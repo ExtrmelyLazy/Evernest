@@ -3,6 +3,10 @@ export default {
   description: '无聊',
   
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
+    
     nav: [
       { text: '首页', link: '/' },
       { text: '关于', link: '/about' },
@@ -10,12 +14,13 @@ export default {
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/VICTORIALAZY111' }
+      { icon: 'github', link: 'https://github.com/VICTORIALAZY111' },
+      { icon: 'mail', link: 'mailto:477522069@qq.com' }
     ],
 
     footer: {
       message: '基于 VitePress 构建',
-      copyright: 'Copyright © 2024 EverNest'
+      copyright: 'Copyright © 2025 EverNest'
     },
 
     appearance: true,
