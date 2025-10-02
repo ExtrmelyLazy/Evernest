@@ -1,0 +1,18 @@
+{
+  "name": "myvitepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "biuld": "vitepress biuld docs",
+    "preview": "vitepress preview docs"
+  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
