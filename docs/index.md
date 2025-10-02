@@ -1,6 +1,6 @@
 # 欢迎来到EverNest
 喝杯咖啡吧~  
-这里永远都是你的EverNest  
+这里是你的EverNest  
 
 ## 联系我
 [QQ邮箱](mailto:477522069@qq.com)  
