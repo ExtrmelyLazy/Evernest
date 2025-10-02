@@ -1,10 +1,25 @@
 export default {
-  title: '我的网站',
-  description: '运行在 Termux 上的 VitePress 网站',
+  title: 'EverNest',
+  description: '无聊',
+  
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于', link: '/about' }
-    ]
-  }
+      { text: '关于', link: '/about' },
+      { text: '博客', link: '/blog' }
+    ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/VICTORIALAZY111' }
+    ],
+
+    footer: {
+      message: '基于 VitePress 构建',
+      copyright: 'Copyright © 2024 EverNest'
+    },
+
+    appearance: true,
+  },
+  
+  lastUpdated: true
 }
