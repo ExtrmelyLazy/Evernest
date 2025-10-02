@@ -14,12 +14,12 @@ export default {
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/VICTORIALAZY111' },
-      { icon: 'mail', link: 'mailto:477522069@qq.com' }
+      { icon: 'github', link: 'https://github.com/VICTORIALAZY111' }
     ],
 
     footer: {
       message: '基于 VitePress 构建',
+      message: '请联系 <a href="mailto:477522069@qq.com">477522069@qq.com</a>'
       copyright: 'Copyright © 2025 EverNest'
     },
 
