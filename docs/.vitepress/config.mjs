@@ -19,7 +19,7 @@ export default {
 
     footer: {
       message: '基于 VitePress 构建',
-      message: '请联系 <a href="mailto:477522069@qq.com">477522069@qq.com</a>'
+      message: '请联系 <a href="mailto:477522069@qq.com">477522069@qq.com</a>',
       copyright: 'Copyright © 2025 EverNest'
     },
 
