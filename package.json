@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
-    "blog:index": "node scripts/generate-blog.js"
+    "preview": "vitepress preview docs",
+    "blog:index": "node scripts/generate-blog.js",
     "blog:new": "node scripts/new-post.js"
   },
   "keywords": [],
