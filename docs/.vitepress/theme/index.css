@@ -1,0 +1,60 @@
+
+:root {
+  --vp-c-brand: #42b883;
+  --vp-c-brand-light: #66c89c;
+  --vp-c-brand-lighter: #8bd4b5;
+  --vp-c-brand-dark: #38a471;
+  --vp-c-brand-darker: #2e8b61;
+  
+  
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f8f8f8;
+  --vp-c-bg-elv: #ffffff;
+  
+  
+  --vp-c-text: #2c3e50;
+  --vp-c-text-light: #476582;
+  --vp-c-text-lighter: #90a4b7;
+  
+  
+  --vp-c-border: #e2e8f0;
+  --vp-c-divider: #e2e8f0;
+  --vp-c-gutter: #e2e8f0;
+}
+
+
+.dark {
+  --vp-c-brand: #42b883;
+  --vp-c-brand-light: #66c89c;
+  --vp-c-brand-lighter: #8bd4b5;
+  
+  
+  --vp-c-bg: #0f1419;
+  --vp-c-bg-alt: #1a1f25;
+  --vp-c-bg-elv: #1e2328;
+  
+  
+  --vp-c-text: #ffffff;
+  --vp-c-text-light: #a0aec0;
+  --vp-c-text-lighter: #718096;
+  
+  
+  --vp-c-border: #2d3748;
+  --vp-c-divider: #2d3748;
+}
+
+/* Vue 风格的链接和按钮 */
+.vp-doc a {
+  color: var(--vp-c-brand);
+  transition: color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-light);
+}
+.VPNavBar {
+  border-bottom: 1px solid var(--vp-c-border);
+}
+.vp-doc div[class*="language-"] {
+  border-radius: 8px;
+}
