@@ -1,6 +1,6 @@
 <div align="center">
 
-![我的头像](./img/ava.png){style="width: 120px; height: 120px; border-radius: 50%; border: 2px solid 3px;"}
+![我的头像](./img/ava.png){style="width: 120px; height: 120px; border-radius: 50%; border: 2px solid #000000;"}
 
 # EverNest
 
