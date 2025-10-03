@@ -1,13 +1,10 @@
 <div align="center">
 
-![我的头像](./img/ava.png){style="width: 120px; height: 120px; border-radius: 50%;"}
+![我的头像](./img/ava.png){style="width: 120px; height: 120px; border-radius: 50%; border: 2px"}
 
 # EverNest
 
 </div>
-
-# Croeso
-***
 
 ## EverNest
 2011 | ISFJ | 后端不会前端不精通 | 威尔士语初学者(Croeso~)<br>
