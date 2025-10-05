@@ -1,13 +1,11 @@
-/* .vitepress/theme/custom.css */
-
-/* Vue.js 风格主题配色 - 保持您的优秀配色 */
+/* 夜晚与深夜主题配色 */
 :root {
-  /* Vue 品牌色 - 经典的 Vue 绿色 */
-  --vp-c-brand: #42b883;
-  --vp-c-brand-light: #66c89c;
-  --vp-c-brand-lighter: #8bd4b5;
-  --vp-c-brand-dark: #38a471;
-  --vp-c-brand-darker: #2e8b61;
+  /* 品牌色 - 夜晚蓝色调 */
+  --vp-c-brand: #60a5fa;
+  --vp-c-brand-light: #93c5fd;
+  --vp-c-brand-lighter: #bfdbfe;
+  --vp-c-brand-dark: #3b82f6;
+  --vp-c-brand-darker: #2563eb;
   
   /* 背景色 */
   --vp-c-bg: #ffffff;
@@ -27,14 +25,15 @@
 
 /* 深色模式 */
 .dark {
-  --vp-c-brand: #42b883;
-  --vp-c-brand-light: #66c89c;
-  --vp-c-brand-lighter: #8bd4b5;
+  /* 品牌色 - 保持蓝色调 */
+  --vp-c-brand: #60a5fa;
+  --vp-c-brand-light: #93c5fd;
+  --vp-c-brand-lighter: #bfdbfe;
   
-  /* 深色背景 */
-  --vp-c-bg: #0f1419;
-  --vp-c-bg-alt: #1a1f25;
-  --vp-c-bg-elv: #1e2328;
+  /* 深色背景 - 近黑色 */
+  --vp-c-bg: #000000;
+  --vp-c-bg-alt: #0a0a0a;
+  --vp-c-bg-elv: #111111;
   
   /* 深色文字 */
   --vp-c-text: #ffffff;
@@ -42,28 +41,8 @@
   --vp-c-text-lighter: #718096;
   
   /* 深色边框 */
-  --vp-c-border: #2d3748;
-  --vp-c-divider: #2d3748;
-}
-
-/* 只添加必要的汉堡菜单修复 */
-@media (max-width: 768px) {
-  /* 确保汉堡菜单在移动端显示 */
-  .VPNavBarHamburger {
-    display: flex !important;
-  }
-  
-  /* 隐藏桌面菜单 */
-  .VPNavBarMenu {
-    display: none !important;
-  }
-}
-
-/* 桌面端隐藏汉堡菜单 */
-@media (min-width: 769px) {
-  .VPNavBarHamburger {
-    display: none !important;
-  }
+  --vp-c-border: #1a1a1a;
+  --vp-c-divider: #1a1a1a;
 }
 
 /* Vue 风格的链接和按钮 */
