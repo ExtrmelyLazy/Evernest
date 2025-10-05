@@ -1,60 +1,167 @@
+/* .vitepress/theme/custom.css */
 
+/* 夜晚主题 (浅色模式) */
 :root {
-  --vp-c-brand: #42b883;
-  --vp-c-brand-light: #66c89c;
-  --vp-c-brand-lighter: #8bd4b5;
-  --vp-c-brand-dark: #38a471;
-  --vp-c-brand-darker: #2e8b61;
+  /* 背景色 - 深蓝夜空 */
+  --vp-c-bg: #1a1f35;
+  --vp-c-bg-soft: #252b45;
+  --vp-c-bg-mute: #2f3655;
+  --vp-c-bg-alt: #1e243c;
   
+  /* 文字色 */
+  --vp-c-text: #e2e8f0;
+  --vp-c-text-soft: #cbd5e1;
+  --vp-c-text-mute: #94a3b8;
+  --vp-c-text-light: #f1f5f9;
   
-  --vp-c-bg: #ffffff;
-  --vp-c-bg-alt: #f8f8f8;
-  --vp-c-bg-elv: #ffffff;
+  /* 品牌色 - 月光蓝 */
+  --vp-c-brand: #60a5fa;
+  --vp-c-brand-light: #93c5fd;
+  --vp-c-brand-lighter: #bfdbfe;
+  --vp-c-brand-dark: #3b82f6;
+  --vp-c-brand-darker: #2563eb;
   
+  /* 边框色 */
+  --vp-c-border: #374151;
+  --vp-c-border-soft: #4b5563;
+  --vp-c-divider: #3f4a60;
   
-  --vp-c-text: #2c3e50;
-  --vp-c-text-light: #476582;
-  --vp-c-text-lighter: #90a4b7;
+  /* 特殊元素 */
+  --vp-c-neutral: var(--vp-c-bg-mute);
+  --vp-c-neutral-inverse: var(--vp-c-text);
   
+  /* 渐变效果 - 月光渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #60a5fa 30%, #a78bfa);
   
-  --vp-c-border: #e2e8f0;
-  --vp-c-divider: #e2e8f0;
-  --vp-c-gutter: #e2e8f0;
+  /* 按钮 */
+  --vp-button-brand-border: var(--vp-c-brand);
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-border: var(--vp-c-brand-light);
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+  
+  /* 代码块 */
+  --vp-code-block-bg: #1e293b;
+  --vp-code-color: #cbd5e1;
+  --vp-code-line-highlight-bg: rgba(96, 165, 250, 0.1);
+  
+  /* 自定义块 */
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lighter);
+  --vp-custom-block-tip-bg: rgba(96, 165, 250, 0.1);
+  
+  --vp-custom-block-info-border: #67e8f9;
+  --vp-custom-block-info-text: #a5f3fc;
+  --vp-custom-block-info-bg: rgba(103, 232, 249, 0.1);
+  
+  /* 导航栏 */
+  --vp-nav-bg-color: rgba(26, 31, 53, 0.8);
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
+  
+  /* 侧边栏 */
+  --vp-sidebar-bg-color: var(--vp-c-bg-soft);
+  
+  /* 滚动条 */
+  --vp-c-scrollbar: var(--vp-c-border);
 }
 
-
+/* 深夜主题 (深色模式) */
 .dark {
-  --vp-c-brand: #42b883;
-  --vp-c-brand-light: #66c89c;
-  --vp-c-brand-lighter: #8bd4b5;
+  /* 背景色 - 更深邃的夜空 */
+  --vp-c-bg: #0f1324;
+  --vp-c-bg-soft: #1a1f35;
+  --vp-c-bg-mute: #252b45;
+  --vp-c-bg-alt: #141829;
   
+  /* 文字色 - 更柔和的月光 */
+  --vp-c-text: #d1d5db;
+  --vp-c-text-soft: #9ca3af;
+  --vp-c-text-mute: #6b7280;
+  --vp-c-text-light: #e5e7eb;
   
-  --vp-c-bg: #0f1419;
-  --vp-c-bg-alt: #1a1f25;
-  --vp-c-bg-elv: #1e2328;
+  /* 品牌色 - 星光紫 */
+  --vp-c-brand: #8b5cf6;
+  --vp-c-brand-light: #a78bfa;
+  --vp-c-brand-lighter: #c4b5fd;
+  --vp-c-brand-dark: #7c3aed;
+  --vp-c-brand-darker: #6d28d9;
   
-  
-  --vp-c-text: #ffffff;
-  --vp-c-text-light: #a0aec0;
-  --vp-c-text-lighter: #718096;
-  
-  
+  /* 边框色 - 更深的轮廓 */
   --vp-c-border: #2d3748;
-  --vp-c-divider: #2d3748;
+  --vp-c-border-soft: #4a5568;
+  --vp-c-divider: #2a3249;
+  
+  /* 渐变效果 - 星光渐变 */
+  --vp-home-hero-name-background: linear-gradient(120deg, #8b5cf6 30%, #ec4899);
+  
+  /* 代码块 - 更深的代码背景 */
+  --vp-code-block-bg: #111827;
+  --vp-code-line-highlight-bg: rgba(139, 92, 246, 0.15);
+  
+  /* 自定义块 */
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lighter);
+  --vp-custom-block-tip-bg: rgba(139, 92, 246, 0.1);
+  
+  --vp-custom-block-info-border: #6ee7b7;
+  --vp-custom-block-info-text: #a7f3d0;
+  --vp-custom-block-info-bg: rgba(110, 231, 183, 0.1);
+  
+  /* 导航栏 - 半透明深色 */
+  --vp-nav-bg-color: rgba(15, 19, 36, 0.9);
+  
+  /* 侧边栏 */
+  --vp-sidebar-bg-color: var(--vp-c-bg-soft);
 }
 
-/* Vue 风格的链接和按钮 */
+/* 首页英雄区域样式 */
+.vp-doc .VPHome {
+  background: linear-gradient(135deg, var(--vp-c-bg) 0%, var(--vp-c-bg-mute) 100%);
+}
+
+/* 代码块样式增强 */
+.vp-doc [class*="language-"] {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+}
+
+/* 导航栏样式 */
+.VPNav {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-border);
+}
+
+/* 内容区域过渡效果 */
+.vp-doc {
+  transition: all 0.3s ease;
+}
+
+/* 链接悬停效果 */
 .vp-doc a {
-  color: var(--vp-c-brand);
   transition: color 0.2s ease;
 }
 
 .vp-doc a:hover {
   color: var(--vp-c-brand-light);
 }
-.VPNavBar {
-  border-bottom: 1px solid var(--vp-c-border);
+
+/* 按钮样式增强 */
+.vp-doc .vp-button {
+  transition: all 0.2s ease;
 }
-.vp-doc div[class*="language-"] {
-  border-radius: 8px;
+
+.vp-doc .vp-button.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+}
+
+.dark .vp-doc .vp-button.brand:hover {
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
