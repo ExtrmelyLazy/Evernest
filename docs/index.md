@@ -8,7 +8,7 @@ const { site } = useData()
 <HeroHeader 
   title="我的博客"
   description="分享技术与生活"
-  backgroundImage="/hero-bg.jpg"
+  backgroundImage="/hero-bg.png"
 />
 
 # 文章列表
