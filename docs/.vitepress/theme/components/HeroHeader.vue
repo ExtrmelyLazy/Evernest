@@ -15,10 +15,13 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { withBase } from 'vitepress'
 
+// 导入同级目录的图片
+import heroBg from './hero-bg.png'
+
 const props = defineProps({
   backgroundImage: {
     type: String,
-    default: '/hero-bg.png'  // 修改为 .png
+    default: heroBg  // 直接使用导入的图片
   },
   title: {
     type: String,
@@ -31,49 +34,40 @@ const props = defineProps({
 })
 
 const scrollY = ref(0)
-const container = ref(null)
 
-// 计算滚动比例 (0 到 1)
+// 计算滚动比例
 const scrollProgress = computed(() => {
   const maxScroll = 200
   return Math.min(scrollY.value / maxScroll, 1)
 })
 
-// 背景缩放效果
+// 背景样式
 const backgroundStyle = computed(() => {
   const scale = 1 + scrollProgress.value * 0.1
   const brightness = 1 - scrollProgress.value * 0.2
   const blur = scrollProgress.value * 1
   
   return {
-    backgroundImage: `url(${withBase(props.backgroundImage)})`,
+    backgroundImage: `url(${props.backgroundImage})`, // 直接使用导入的路径
     transform: `scale(${scale})`,
     filter: `brightness(${brightness}) blur(${blur}px)`
   }
 })
 
-// 内容位置变化
+// 其他样式计算保持不变
 const contentStyle = computed(() => {
   const translateY = scrollProgress.value * -20
-  return {
-    transform: `translateY(${translateY}px)`
-  }
+  return { transform: `translateY(${translateY}px)` }
 })
 
-// 标题大小变化
 const titleStyle = computed(() => {
   const scale = 1 - scrollProgress.value * 0.3
-  return {
-    transform: `scale(${scale})`
-  }
+  return { transform: `scale(${scale})` }
 })
 
-// 描述文字透明度变化
 const descriptionStyle = computed(() => {
   const opacity = 1 - scrollProgress.value * 0.2
-  return {
-    opacity: opacity
-  }
+  return { opacity: opacity }
 })
 
 const handleScroll = () => {
@@ -90,6 +84,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+/* 样式保持不变 */
 .hero-container {
   position: relative;
   height: 60vh;
@@ -140,12 +135,10 @@ onUnmounted(() => {
   transition: none;
 }
 
-/* 响应式设计 */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
   }
-  
   .hero-description {
     font-size: 1rem;
   }
